@@ -1,0 +1,121 @@
+.service-section {
+    padding: 4rem 0;
+
+    @include tablet {
+        padding: 1rem 0;
+    }
+
+    .sv-inner-main-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 5rem;
+
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+
+        .sv-left-box {
+            display: flex;
+            text-align: left;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .sv-content {
+
+
+                h2 {
+                    @include sctionHead;
+                    padding: 1rem 0;
+
+                    @include tablet {
+                        padding-bottom: 0rem !important;
+                    }
+                }
+
+                p {
+                    @include BodyText;
+
+                    @include tablet {
+                        padding-bottom: 1rem !important;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .second-service-box {
+        margin-top: 10rem;
+
+        .sec-scv-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            column-gap: 3rem;
+            background: #faf8f8;
+
+            @include tablet {
+                grid-template-columns: 1fr;
+                margin-bottom: 1rem;
+            }
+
+            .sc-content-box {
+                display: flex;
+                text-align: left;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-right: 8rem;
+
+                @include tablet {
+                    padding: 3rem 0;
+                }
+
+                h2 {
+                    @include sctionHead;
+                }
+
+                p {
+                    @include BodyText;
+                }
+            }
+        }
+
+        .sec-scv-wrapper:nth-child(even) {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            column-gap: 3rem;
+            background: rgb(248, 105, 60);
+            background: linear-gradient(164deg, rgba(248, 105, 60, 1) 0%, rgba(138, 13, 140, 1) 65%);
+
+            @include tablet {
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .sc-content-box {
+                display: flex;
+                text-align: left;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-left: 8rem;
+
+                @include tablet {
+                    padding: 3rem 0;
+                }
+
+                h2 {
+                    @include sctionHead;
+                    color: #fff
+                }
+
+                p {
+                    @include BodyText;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

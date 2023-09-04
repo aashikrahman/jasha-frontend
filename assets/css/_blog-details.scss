@@ -1,0 +1,27 @@
+.blog-details {
+    padding: 2rem 0;
+
+    .blog-details-content {
+        .sv-main-blog {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+            p {
+                margin-right: 3rem;
+            }
+        }
+
+        padding: 2rem 0;
+
+        h2 {
+            @include whereBoxSection;
+            font-size: 28px;
+        }
+
+        p {
+            @include BodyText;
+        }
+    }
+}

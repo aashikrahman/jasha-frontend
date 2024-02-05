@@ -1,798 +1,1039 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet" />
 
     <title>jasha</title>
-</head>
+  </head>
 
-<body>
-    <header>
+  <body>
+<header>
 
-        <nav class="navbar navbar-expand-lg 
-            navbar-light bg-light fixed-top py-lg-0 ">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
 
-                    <!-- Add logo with size of 90*80 -->
-                    <img src="assets/images/jash_logp.png" class="img-fluid" alt="">
-                </a>
+  <nav class="navbar navbar-expand-lg 
+            navbar-light bg-light py-lg-0 ">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
 
-                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        <!-- Add logo with size of 90*80 -->
+        <img src="assets/images/jash_logp.png" class="img-fluid" alt="">
+      </a>
+
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                     aria-label="Toggle navigation">
 
                     <span class="navbar-toggler-icon"></span>
                 </button> -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Company
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="about.html">About us</a></li>
-                                <li><a class="dropdown-item" href="whychoose-us.html">Why choose us</a></li>
-                                <li><a class="dropdown-item" href="our-stories.html">Our success stories</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Company
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="about.html">About us</a></li>
+              <li><a class="dropdown-item" href="whychoose-us.html">Why choose us</a></li>
+              <li><a class="dropdown-item" href="our-stories.html">Our success stories</a></li>
 
-                                <li><a class="dropdown-item" href="quality-policy.html">Quality Policy</a></li>
-                                <li><a class="dropdown-item" href="career.html">Careers </a></li>
-                                <li><a class="dropdown-item" href="certificates.html">Certificates</a></li>
-                                <li><a class="dropdown-item" href="accreditations.html">Acreditations and licences</a>
-                                </li>
-                                <li><a class="dropdown-item" href="our-partners.html">Our partners in success</a></li>
+              <li><a class="dropdown-item" href="quality-policy.html">Quality Policy</a></li>
+              <li><a class="dropdown-item" href="career.html">Careers </a></li>
+              <li><a class="dropdown-item" href="certificates.html">Certificates</a></li>
+              <li><a class="dropdown-item" href="accreditations.html">Acreditations and licences</a>
+              </li>
+              <li><a class="dropdown-item" href="our-partners.html">Our partners in success</a></li>
 
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Services
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                <li><a class="dropdown-item" href="creative-designs.html">Creative Design </a></li>
+              <li><a class="dropdown-item" href="creative-designs.html">Creative Design </a></li>
 
-                                <li><a class="dropdown-item" href="instant-printing.html">Instant Printing</a></li>
-                                <li><a class="dropdown-item" href="signin-way.html">Signage and way finding </a></li>
-                                <li><a class="dropdown-item" href="sticker-branding.html">Sticker Branding</a></li>
-                                <li><a class="dropdown-item" href="retail-store.html">Retail Store Promotions</a>
-                                </li>
-                                <li><a class="dropdown-item" href="exbition.html">Exhibition Booth Design &
-                                        Production</a></li>
-                                <li><a class="dropdown-item" href="event-production.html">Event Production </a></li>
+              <li><a class="dropdown-item" href="instant-printing.html">Instant Printing</a></li>
+              <li><a class="dropdown-item" href="signin-way.html">Signage and way finding </a></li>
+              <li><a class="dropdown-item" href="sticker-branding.html">Sticker Branding</a></li>
+              <li><a class="dropdown-item" href="retail-store.html">Retail Store Promotions</a>
+              </li>
+              <li><a class="dropdown-item" href="exbition.html">Exhibition Booth Design &
+                  Production</a></li>
+              <li><a class="dropdown-item" href="event-production.html">Event Production </a></li>
 
-                                <li><a class="dropdown-item" href="brand-production.html">Brand Production and
-                                        activation</a></li>
+              <li><a class="dropdown-item" href="brand-production.html">Brand Production and
+                  activation</a></li>
 
-                                <li><a class="dropdown-item" href="corporate-gifts.html">Corporate Gifts</a></li>
+              <li><a class="dropdown-item" href="corporate-gifts.html">Corporate Gifts</a></li>
 
 
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="facilities.html">Facilities</a>
-                        </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="facilities.html">Facilities</a>
+          </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="blogs.html">Blogs</a>
-                        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blogs.html">Blogs</a>
+          </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery">Gallery</a>
-                        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Gallery</a>
+          </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html">Contact us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-    </header>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
     <section class="banner">
-
-        <div class="swiper mySwiperBanner">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="main-banner">
-                        <div class="main-bn-img">
-                            <img src="assets/images/banner-1.jpeg" class="img-fluid" alt="">
-                        </div>
-                        <div class="baner-pice-img wow fadeInUpBig" data-wow-duration=".7s">
-                            <img class="img-fluid" src="assets/images/banner-img.png" alt="">
-                        </div>
-
-                        <div class="container">
-                            <div class="banner-content">
-                                <div class="content-text wow fadeInUpBig" data-wow-duration=".7s">
-                                    <h4>Welcome to </h4>
-                                    <h2> Jasha Solutions W.L.L</h2>
-                                    <p>Jasha is a full-service brand production agency in Doha, Qatar. It is
-                                        transforming the
-                                        brand journey of its clients with value-added insights and a rich spectrum of
-                                        services.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="swiper mySwiperBanner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="main-banner">
+                <div class="main-bn-img">
+                  <img src="assets/images/banner-1.jpg" class="img-fluid" alt="" />
                 </div>
-                <div class="swiper-slide">
-                    <div class="main-banner">
-                        <div class="main-bn-img">
-                            <img src="assets/images/banner-1.jpeg" class="img-fluid" alt="">
-                        </div>
-                        <div class="baner-pice-img wow fadeInUpBig" data-wow-duration=".7s">
-                            <img class="img-fluid" src="assets/images/banner-img.png" alt="">
-                        </div>
-
-                        <div class="container">
-                            <div class="banner-content">
-                                <div class="content-text wow fadeInUpBig" data-wow-duration=".7s">
-                                    <h4>Welcome to </h4>
-                                    <h2> Jasha Solutions W.L.L</h2>
-                                    <p>Jasha is a full-service brand production agency in Doha, Qatar. It is
-                                        transforming the
-                                        brand journey of its clients with value-added insights and a rich spectrum of
-                                        services.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="baner-pice-img wow fadeInUpBig" data-wow-duration=".7s">
+                  <img class="img-fluid" src="assets/images/banner-img.png" alt="" />
                 </div>
+            
+                <div class="container">
+                  <div class="banner-content">
+                    <div class="content-text wow fadeInUpBig" data-wow-duration=".7s">
+                      <h4>Welcome to</h4>
+                      <h2>Jasha Solutions</h2>
+                      <p>
+                      Jasha is a full-service brand production agency in Doha, Qatar. It is transforming the brand journey of its clients with
+                      value-added insights and a rich spectrum of services.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="swiper-slide">
+            <div class="main-banner-2">
+              <div class="main-bn-img">
+                <img
+                  src="assets/images/banner-2.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div
+                class="baner-pice-img wow fadeInUpBig"
+                data-wow-duration=".7s"
+              >
+                <!-- <img
+                  class="img-fluid"
+                  src="assets/images/banner-img.png"
+                  alt=""
+                /> -->
+              </div>
 
+              <div class="container">
+                <div class="banner-content">
+                  <div
+                    class="content-text wow fadeInUpBig"
+                    data-wow-duration=".7s"
+                  >
+                    <!-- <h4>Welcome to</h4> -->
+                    <h2>Seed to fruit</h2>
+                    <p>
+                  As a Creative Brand Production Agency, we go all the way, right from the discovery
+                  stage through brainstorming, visualizing, designing, printing and publishing the final
+                  output.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="main-banner">
+              <div class="main-bn-img">
+                <img
+                  src="assets/images/banner-3.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div
+                class="baner-pice-img wow fadeInUpBig"
+                data-wow-duration=".7s"
+              >
+                <img
+                  class="img-fluid"
+                  src="assets/images/banner-img.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="container">
+                <div class="banner-content">
+                  <div
+                    class="content-text wow fadeInUpBig"
+                    data-wow-duration=".7s"
+                  >
+               
+                    <h2>The Jasha Advantage</h2>
+                    <p>
+                    At Jasha, Design and Production happen under the same roof. This makes coordination
+                    easy, delivery on-time, and your life so much more hassle-free.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="main-banner-2">
+              <div class="main-bn-img">
+                <img src="assets/images/banner-4.jpg" class="img-fluid" alt="" />
+              </div>
+        
+          
+              <div class="container">
+                <div class="banner-content">
+                  <div class="content-text wow fadeInUpBig" data-wow-duration=".7s">
+          
+                    <h2>Client Satisfaction</h2>
+                    <p>
+                      The client is the key guest and purpose of every journey that we captain. We toil hard
+                      for that nod of approval, that emphatic Yes, and that smile of satisfaction.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="swiper-slide">
+              <div class="main-banner">
+                <div class="main-bn-img">
+                  <img src="assets/images/banner-5.jpg" class="img-fluid" alt="" />
+                </div>
+                <div class="baner-pice-img wow fadeInUpBig" data-wow-duration=".7s">
+                  <img class="img-fluid" src="assets/images/banner-img.png" alt="" />
+                </div>
+            
+                <div class="container">
+                  <div class="banner-content">
+                    <div class="content-text wow fadeInUpBig" data-wow-duration=".7s">
+            
+                      <h2>Expertise</h2>
+                      <p>
+                      Expertise combines the precision of a surgeon with the creativity of an artist. Expertise
+                      is what builds trust in customers. Expertise is what Jasha is passionate about.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
+      </div>
     </section>
     <!-- services -->
     <section class="home-services">
-        <div class="container">
-            <div class="serviceContent wow fadeInUpBig" data-wow-duration=".7s">
-                <h2>Our Services</h2>
-                <p>We offer the full spectrum of services in order to do a good job and provide a complete solution.
-                    Once the brief is created and shared, cross-functional teams across Jasha put their heads together
-                    and make a checklist of what all has to be delivered. Graphic designers and Copywriters brainstorm
-                    together,
-                    then flesh out the copy and design required to translate the seed ideas into fresh produce.</p>
-            </div>
-
-            <div class="service-slider" data-aos="fade-up" data-aos-duration="1000">
-
-                <div class="swiper mySwiperServices">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="home-sv-wrapper">
-
-                                <div class="hm-sv-box">
-                                    <img src="assets/images/Mask group.jpg" alt="">
-                                    <p>inside-section</p>
-                                </div>
-
-
-                                <div class="hm-sv-box">
-
-                                    <div class="hm-inside">
-                                        <img src="assets/images/2.png" class="img-fluid" alt="">
-                                        <p>inside-section</p>
-                                    </div>
-
-
-
-
-                                    <div class="hm-inside">
-                                        <img src="assets/images/3.png" alt="">
-                                        <p>inside-section</p>
-                                    </div>
-
-
-                                </div>
-                                <div class="hm-sv-box">
-
-                                    <img src="assets/images/4.png" alt="">
-                                    <p>inside-section</p>
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="home-sv-wrapper">
-
-                                <div class="hm-sv-box">
-                                    <img src="assets/images/Mask group.jpg" alt="">
-                                    <p>Instant Printing</p>
-                                </div>
-
-
-                                <div class="hm-sv-box">
-
-                                    <div class="hm-inside">
-                                        <img src="assets/images/2.png" class="img-fluid" alt="">
-                                        <p>Sticker branding</p>
-                                    </div>
-
-
-
-
-                                    <div class="hm-inside">
-                                        <img src="assets/images/3.png" alt="">
-                                        <p>Signages wayfinding</p>
-                                    </div>
-
-
-                                </div>
-                                <div class="hm-sv-box">
-
-                                    <img src="assets/images/4.png" alt="">
-                                    <p>Event Production</p>
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="home-sv-wrapper">
-
-                                <div class="hm-sv-box">
-                                    <img src="assets/images/Mask group.jpg" alt="">
-                                    <p>inside-section</p>
-                                </div>
-
-
-                                <div class="hm-sv-box">
-
-                                    <div class="hm-inside">
-                                        <img src="assets/images/2.png" class="img-fluid" alt="">
-                                        <p>inside-section</p>
-                                    </div>
-
-
-
-
-                                    <div class="hm-inside">
-                                        <img src="assets/images/3.png" alt="">
-                                        <p>inside-section</p>
-                                    </div>
-
-
-                                </div>
-                                <div class="hm-sv-box">
-
-                                    <img src="assets/images/4.png" alt="">
-                                    <p>inside-section</p>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-
-            </div>
+      <div class="container">
+        <div class="serviceContent wow fadeInUpBig" data-wow-duration=".7s">
+          <h2>Our Services</h2>
+          <p>
+            We offer the full spectrum of services in order to do a good job and
+            provide a complete solution. Once the brief is created and shared,
+            cross-functional teams across Jasha put their heads together and
+            make a checklist of what all has to be delivered. Graphic designers
+            and Copywriters brainstorm together, then flesh out the copy and
+            design required to translate the seed ideas into fresh produce.
+          </p>
         </div>
+
+        <div class="service-slider" data-aos="fade-up" data-aos-duration="1000">
+          <div class="swiper mySwiperServices">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="home-sv-wrapper">
+                  <div class="hm-sv-box">
+                    <img src="assets/images/serv-1.jpg" alt="" />
+                    <p>Creative Designing</p>
+                  </div>
+
+                  <div class="hm-sv-box">
+                    <div class="hm-inside">
+                      <img src="assets/images/2.png" class="img-fluid" alt="" />
+                      <p>Large Format Printing</p>
+                    </div>
+
+                    <div class="hm-inside">
+                      <img src="assets/images/3.png" alt="" />
+                      <p>Signages and wayfinding</p>
+                    </div>
+                  </div>
+                  <div class="hm-sv-box">
+                    <img src="assets/images/4.png" alt="" />
+                    <p>Branding</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="home-sv-wrapper">
+                  <div class="hm-sv-box">
+                    <img src="assets/images/Mask group.jpg" alt="" />
+                    <p>Instant Printing</p>
+                  </div>
+
+                  <div class="hm-sv-box">
+                    <div class="hm-inside">
+                      <img src="assets/images/2.png" class="img-fluid" alt="" />
+                      <p>Sticker branding</p>
+                    </div>
+
+                    <div class="hm-inside">
+                      <img src="assets/images/3.png" alt="" />
+                      <p>Signages wayfinding</p>
+                    </div>
+                  </div>
+                  <div class="hm-sv-box">
+                    <img src="assets/images/4.png" alt="" />
+                    <p>Event Production</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="home-sv-wrapper">
+                  <div class="hm-sv-box">
+                    <img src="assets/images/Mask group.jpg" alt="" />
+                    <p>inside-section</p>
+                  </div>
+
+                  <div class="hm-sv-box">
+                    <div class="hm-inside">
+                      <img src="assets/images/2.png" class="img-fluid" alt="" />
+                      <p>inside-section</p>
+                    </div>
+
+                    <div class="hm-inside">
+                      <img src="assets/images/3.png" alt="" />
+                      <p>inside-section</p>
+                    </div>
+                  </div>
+                  <div class="hm-sv-box">
+                    <img src="assets/images/4.png" alt="" />
+                    <p>inside-section</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- services end -->
 
     <!--Section about us-->
 
     <section class="main-wrapper-third">
-        <div class="main-pattern">
-            <img src="assets/images/framing.png" class="img-fluid" alt="">
+      <div class="main-pattern">
+        <img src="assets/images/framing.png" class="img-fluid" alt="" />
+      </div>
+      <div class="container">
+        <div class="about-box" data-aos="fade-up" data-aos-duration="1000">
+          <div class="about-content-wrapper">
+            <div class="abt-head">
+              <h2>About us</h2>
+            </div>
+
+            <div class="abt-head-content">
+              <p>
+                Jasha has scripted success stories for various clients since
+                2010. Incidentally, our own rise and growth is an interesting
+                story that’s worth telling.i n 2010, a young graphic designer,
+                from a rich background in the creative business, had a vision.
+                To establish a creative and brand production agency that would
+                serve the full spectrum of marketing and branding needs for
+                business organizations in Doha, Qatar. Passionate and
+                relentless, he, along with his Qatari partner founded Jasha
+                Solutions the same year.
+              </p>
+
+              <div class="btn-abt">
+                <a href="">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="abt-floating-boxes">
+            <div
+              class="mission-vision"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="mt-5">
+                <h3>Our Vision</h3>
+                <p>
+                  To be a reliable, one-stop, Advertising and Brand Production
+                  solutions provider in the MENA Region.
+                </p>
+              </div>
+
+              <div class="mt-5">
+                <h3>Our Vision</h3>
+                <p>
+                  To be a reliable, one-stop, Advertising and Brand Production
+                  solutions provider in the MENA Region.
+                </p>
+              </div>
+            </div>
+            <div
+              class="abt-img-box"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+
+            <div class="experiance-box">
+              <div class="years">
+                <h2>10+ <br>
+                Years
+                </h2>
+                
+               
+              </div>
+              <div class="exp-box">
+                <p>Experience</p>
+              </div>
+              
+            </div>
+              <img src="assets/images/about.png" class="img-fluid" alt="" />
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="why-choose-box" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
-            <div class="about-box" data-aos="fade-up" data-aos-duration="1000">
-                <div class="about-content-wrapper">
-                    <div class="abt-head">
-                        <h2>About us</h2>
-                    </div>
+          <h2>Why Choose Jasha</h2>
+          <div class="why-choose-wrapper">
+            <div class="why-choose-boxes">
+              <img
+                src="assets/images/why-choose-1.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="why-choose-content">
+                <h3>A decade and More of experience</h3>
 
-                    <div class="abt-head-content">
-                        <p>Jasha has scripted success stories for various clients since 2010. Incidentally, our own rise
-                            and growth is an interesting story that’s worth telling.i n 2010, a young graphic designer,
-                            from a rich background in the creative business, had a vision. To establish a creative and
-                            brand production agency that would serve the full spectrum of marketing and branding needs
-                            for business organizations in Doha, Qatar. Passionate and relentless, he, along with his
-                            Qatari partner founded Jasha Solutions the same year.</p>
+                <p>
+                  Jasha has transformed the brand journey for innumerable of
+                  clients in its 13-year long history. Experience brings new
+                  insights, new perspectives and new strategies to overcome
+                  challenges.
+                </p>
 
-
-                        <div class="btn-abt">
-                            <a href="">Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="abt-floating-boxes">
-                    <div class="mission-vision" data-aos="fade-left" data-aos-duration="1000">
-                        <div class="mt-5">
-                            <h3>Our Vision</h3>
-                            <p>To be a reliable, one-stop, Advertising and Brand Production solutions provider in the
-                                MENA
-                                Region.</p>
-                        </div>
-
-                        <div class="mt-5">
-                            <h3>Our Vision</h3>
-                            <p>To be a reliable, one-stop, Advertising and Brand Production solutions provider in the
-                                MENA
-                                Region.</p>
-                        </div>
-                    </div>
-                    <div class="abt-img-box" data-aos="fade-right" data-aos-duration="1000">
-                        <img src="assets/images/about.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-
+                <a href="">Read More </a>
+              </div>
             </div>
-        </div>
-        <div class="why-choose-box" data-aos="fade-up" data-aos-duration="1000">
-            <div class="container">
-                <h2>Why Choose Jasha</h2>
-                <div class="why-choose-wrapper">
-                    <div class="why-choose-boxes">
-                        <img src="assets/images/why-choose.png" class="img-fluid" alt="">
-                        <div class="why-choose-content">
-                            <h3>A decade and
-                                More of experience</h3>
-
-                            <p>Jasha has transformed the brand journey for innumerable of clients in its 13-year long
-                                history. Experience brings new insights, new perspectives and new strategies to overcome
-                                challenges.</p>
-
-                            <a href="">Read More </a>
-                        </div>
-
-                    </div>
-                    <div class="why-choose-boxes">
-                        <img src="assets/images/why-choose-2.png" class="img-fluid" alt="">
-                        <div class="why-choose-content">
-                            <h3>Expertise and Excellence</h3>
-                            <p>Any job worth doing is worth doing well. As creative professionals, we enjoy the
-                                adrenalin
-                                rush and creativity that stimulates us all through the day, and makes what we do
-                                worthwhile.</p>
-                            <a href="">Read More </a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="why-choose-sec-wrapper">
-                    <div class="why-choose-boxes">
-                        <img src="assets/images/why-choose-3.png" class="img-fluid" alt="">
-                        <div class="why-choose-content">
-                            <h3>One-stop shop</h3>
-                            <p>The whole purpose of experience, expertise or excellence is lost if we do not make our
-                                clients’ lives easy. With advertising or branding becoming more sophisticated with time,
-                            </p>
-                            <a href="">Read More </a>
-                        </div>
-                    </div>
-                    <div class="why-choose-boxes">
-                        <img src="assets/images/why-choose-4.png" class="img-fluid" alt="">
-                        <div class="why-choose-content">
-                            <h3>Business-friendly, people-friendly</h3>
-                            <p>Time and again, clients have appreciated the professional approach adopted by our vast
-                                team of creative professionals. This makes it easy for them to share feedback, ask
-
-                            </p>
-                            <a href="">Read More </a>
-                        </div>
-                    </div>
-                    <div class="why-choose-boxes">
-                        <img src="assets/images/why-choose-5.png" class="img-fluid" alt="">
-                        <div class="why-choose-content">
-                            <h3>Satisfaction Guaranteed</h3>
-
-                            <p>As a company, Jasha has humble beginnings and grown organically with time. We appreciate
-                                the concerns and challenges that business organizations face all the time, having
-                                travelled
-                                that road ourselves.</p>
-                            <a href="">Read More </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="why-choose-boxes">
+              <img
+                src="assets/images/why-choose-2.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="why-choose-content">
+                <h3>Expertise and Excellence</h3>
+                <p>
+                  Any job worth doing is worth doing well. As creative
+                  professionals, we enjoy the adrenalin rush and creativity that
+                  stimulates us all through the day, and makes what we do
+                  worthwhile.
+                </p>
+                <a href="">Read More </a>
+              </div>
             </div>
+          </div>
+          <div class="why-choose-sec-wrapper">
+            <div class="why-choose-boxes">
+              <img
+                src="assets/images/why-choose-3.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="why-choose-content">
+                <h3>One-stop shop</h3>
+                <p>
+                  The whole purpose of experience, expertise or excellence is
+                  lost if we do not make our clients’ lives easy. With
+                  advertising or branding becoming more sophisticated with time,
+                </p>
+                <a href="">Read More </a>
+              </div>
+            </div>
+            <div class="why-choose-boxes">
+              <img
+                src="assets/images/why-choose-4.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="why-choose-content">
+                <h3>Business-friendly, people-friendly</h3>
+                <p>
+                  Time and again, clients have appreciated the professional
+                  approach adopted by our vast team of creative professionals.
+                  This makes it easy for them to share feedback, ask
+                </p>
+                <a href="">Read More </a>
+              </div>
+            </div>
+            <div class="why-choose-boxes">
+              <img
+                src="assets/images/why-choose-5.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="why-choose-content">
+                <h3>Satisfaction Guaranteed</h3>
+
+                <p>
+                  As a company, Jasha has humble beginnings and grown
+                  organically with time. We appreciate the concerns and
+                  challenges that business organizations face all the time,
+                  having travelled that road ourselves.
+                </p>
+                <a href="">Read More </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!--Section about us end-->
 
     <!---Our portfolio-->
 
     <section class="portfolio" data-aos="fade-right" data-aos-duration="1000">
-
-        <div class="container">
-
-            <div class="portfolio-content">
-                <p>Our Project</p>
-                <h2>Our Portfolio</h2>
-            </div>
-            <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
-                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
-                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
-                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
-                </div>
-            </nav>
-
+      <div class="container">
+        <div class="portfolio-content">
+          <p>Our Project</p>
+          <h2>Our Portfolio</h2>
         </div>
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="portfolio-box">
-                                <img src="assets/images/portfolio-1.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/portfolio-2.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/portfolio-3.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/portfolio-4.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/portfolio-5.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/portfolio-5.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button
+              class="nav-link active"
+              id="nav-home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-home"
+              type="button"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+            >
+              Home
+            </button>
+            <button
+              class="nav-link"
+              id="nav-profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-profile"
+              type="button"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+            >
+              Profile
+            </button>
+            <button
+              class="nav-link"
+              id="nav-contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-contact"
+              type="button"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+            >
+              Contact
+            </button>
+          </div>
+        </nav>
+      </div>
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-home"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab"
+        >
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="portfolio-box">
+                  <img
+                    src="assets/images/portfolio-1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
                 </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/portfolio-2.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/portfolio-3.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/portfolio-4.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/portfolio-5.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/portfolio-5.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
             </div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="portfolio-box">
-                                <img src="assets/images/portfolio-1.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/portfolio-2.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/portfolio-3.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/portfolio-4.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/portfolio-5.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/portfolio-5.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="portfolio-box">
-                                <img src="assets/images/portfolio-1.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/portfolio-2.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/portfolio-3.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/portfolio-4.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/portfolio-5.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/portfolio-5.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
-
-
-
+        <div
+          class="tab-pane fade"
+          id="nav-profile"
+          role="tabpanel"
+          aria-labelledby="nav-profile-tab"
+        >
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="portfolio-box">
+                  <img
+                    src="assets/images/portfolio-1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/portfolio-2.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/portfolio-3.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/portfolio-4.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/portfolio-5.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/portfolio-5.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-contact"
+          role="tabpanel"
+          aria-labelledby="nav-contact-tab"
+        >
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="portfolio-box">
+                  <img
+                    src="assets/images/portfolio-1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/portfolio-2.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/portfolio-3.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/portfolio-4.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/portfolio-5.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/images/portfolio-5.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
     </section>
     <!---Our portfolio end-->
 
-
-    <section class="why-choose-jasha" data-aos="fade-up" data-aos-duration="1000">
-        <div class="container">
-            <div class="why-choose-wrapper">
-                <div class="why-content">
-                    <h2>Why To Choose Jasha</h2>
-                    <p>Jasha is an independant creative agency founded in Doha Qatar in 2006. We are experienced
-                        professionals in printing in Doha Qatar</p>
-                </div>
-                <div class="why-choose-btn">
-                    <button>
-                        Contact us
-                    </button>
-                </div>
-            </div>
+    <!-- <section
+      class="why-choose-jasha"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="container">
+        <div class="why-choose-wrapper">
+          <div class="why-content">
+            <h2>Why To Choose Jasha</h2>
+            <p>
+              Jasha is an independant creative agency founded in Doha Qatar in
+              2006. We are experienced professionals in printing in Doha Qatar
+            </p>
+          </div>
+          <div class="why-choose-btn">
+            <button>Contact us</button>
+          </div>
         </div>
-    </section>
+      </div>
+    </section> -->
 
     <!---Our Blogs-->
-    <section class="main-blog-slider">
+    <!-- <section class="main-blog-slider">
+      <h2>Our blogs</h2>
+      <div class="container">
+        <div class="blog-slider-wrapper">
+          <div class="blog-boxes">
+            <img
+              src="assets/images/why-choose-2.png"
+              class="img-fluid"
+              alt=""
+            />
 
-        <h2>Our blogs</h2>
-        <div class="container">
-            <div class="blog-slider-wrapper">
-                <div class="blog-boxes">
-                    <img src="assets/images/why-choose-2.png" class="img-fluid" alt="">
-
-                    <div class="blogg-content">
-                        <div class="blog-main-head">
-                            <h2>Creative Design</h2>
-                            <p>20 Aug 2023 </p>
-                        </div>
-                        <p>Brand collateral like logo, signage, brochure and brand identity overhaul require captivating
-                            imagery complemented by interesting copy. And both these must resonate with your marketing
-                            goals
-                        </p>
-                        <a href="blog-details.html">Read More</a>
-                    </div>
-                </div>
-
-                <div class="blog-boxes">
-                    <img src="assets/images/why-choose-2.png" class="img-fluid" alt="">
-
-                    <div class="blogg-content">
-                        <div class="blog-main-head">
-                            <h2>Creative Design</h2>
-                            <p>20 Aug 2023 </p>
-                        </div>
-                        <p>Brand collateral like logo, signage, brochure and brand identity overhaul require captivating
-                            imagery complemented by interesting copy. And both these must resonate with your marketing
-                            goals
-                        </p>
-                        <a href="blog-details.html">Read More</a>
-                    </div>
-                </div>
-                <div class="blog-boxes">
-                    <img src="assets/images/why-choose-2.png" class="img-fluid" alt="">
-
-                    <div class="blogg-content">
-                        <div class="blog-main-head">
-                            <h2>Creative Design</h2>
-                            <p>20 Aug 2023 </p>
-                        </div>
-                        <p>Brand collateral like logo, signage, brochure and brand identity overhaul require captivating
-                            imagery complemented by interesting copy. And both these must resonate with your marketing
-                            goals
-                        </p>
-                        <a href="blog-details.html">Read More</a>
-                    </div>
-                </div>
+            <div class="blogg-content">
+              <div class="blog-main-head">
+                <h2>Creative Design</h2>
+                <p>20 Aug 2023</p>
+              </div>
+              <p>
+                Brand collateral like logo, signage, brochure and brand identity
+                overhaul require captivating imagery complemented by interesting
+                copy. And both these must resonate with your marketing goals
+              </p>
+              <a href="blog-details.html">Read More</a>
             </div>
-        </div>
+          </div>
 
-    </section>
+          <div class="blog-boxes">
+            <img
+              src="assets/images/why-choose-2.png"
+              class="img-fluid"
+              alt=""
+            />
+
+            <div class="blogg-content">
+              <div class="blog-main-head">
+                <h2>Creative Design</h2>
+                <p>20 Aug 2023</p>
+              </div>
+              <p>
+                Brand collateral like logo, signage, brochure and brand identity
+                overhaul require captivating imagery complemented by interesting
+                copy. And both these must resonate with your marketing goals
+              </p>
+              <a href="blog-details.html">Read More</a>
+            </div>
+          </div>
+          <div class="blog-boxes">
+            <img
+              src="assets/images/why-choose-2.png"
+              class="img-fluid"
+              alt=""
+            />
+
+            <div class="blogg-content">
+              <div class="blog-main-head">
+                <h2>Creative Design</h2>
+                <p>20 Aug 2023</p>
+              </div>
+              <p>
+                Brand collateral like logo, signage, brochure and brand identity
+                overhaul require captivating imagery complemented by interesting
+                copy. And both these must resonate with your marketing goals
+              </p>
+              <a href="blog-details.html">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
     <!---Our Blogs end-->
     <footer>
-        <div class="container">
-            <div class="footer-wrapper">
-
-                <div class="footer-col footer-abt">
-                    <img src="assets/images/Jasha-footer.png" class="img-fluid" alt="">
-                    <div class="footer-col">
-                        <p>Jasha is a full-service brand production agency in Doha, Qatar. It is transforming the brand
-                            journey of its clients with value-added insights and a rich spectrum of services. </p>
-                    </div>
-
-                </div>
-                <div class="footer-col">
-                    <div class="footer-nav">
-                        <ul>
-                            <h3>Links</h3>
-                            <li><a href="">Home </a></li>
-                            <li><a href="">About us </a></li>
-
-                            <li><a href="">Certificates </a></li>
-                            <li><a href="">Gallery </a></li>
-                            <li><a href="">Career</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <div class="footer-nav">
-                        <ul>
-                            <h3>Services</h3>
-                            <li><a href="">Creative Design </a></li>
-                            <li><a href="">Instant Printing </a></li>
-                            <li><a href="">Signages wayfinding </a></li>
-                            <li><a href="">Sticker branding </a></li>
-                            <li><a href="">Event Production</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <div class="footer-nav ">
-                        <ul>
-                            <h3>Services</h3>
-                            <li><a href="">Creative Design </a></li>
-                            <li><a href="">Instant Printing </a></li>
-                            <li><a href="">Signages wayfinding </a></li>
-                            <li><a href="">Sticker branding </a></li>
-                            <li><a href="">Event Production</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <div class="footer-nav contact ">
-                        <ul>
-                            <h3>Our Office</h3>
-                            <li><a href=""> <i class="fa fa-map-marker-alt"></i>
-                                    <div>
-                                        P.O. BOX: 31462Doha - Qatar
-                                    </div>
-                                </a></li>
-                            <li><a href="">
-                                    <i class="fa fa-phone"></i>
-                                    <div>
-                                        +974 4427 9696 / 5057 5222 / 5577 9972
-                                    </div>
-                                </a></li>
-                            <li><a href=""> <i class="fa fa-envelope"></i>
-                                    <div>
-                                        info@jashas.com
-                                    </div>
-                                </a></li>
-
-
-                        </ul>
-                    </div>
-                </div>
-
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-col footer-abt">
+            <img
+              src="assets/images/Jasha-footer.png"
+              class="img-fluid"
+              alt=""
+            />
+            <div class="footer-col">
+              <p>
+                Jasha is a full-service brand production agency in Doha, Qatar.
+                It is transforming the brand journey of its clients with
+                value-added insights and a rich spectrum of services.
+              </p>
             </div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-nav">
+              <ul>
+                <h3>Links</h3>
+                <li><a href="">Home </a></li>
+                <li><a href="">About us </a></li>
 
+                <li><a href="">Certificates </a></li>
+                <li><a href="">Gallery </a></li>
+                <li><a href="">Career</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-nav">
+              <ul>
+                <h3>Facilities</h3>
+                <li><a href="">Creative Design </a></li>
+                <li><a href="">Instant Printing </a></li>
+                <li><a href="">Signages wayfinding </a></li>
+                <li><a href="">Sticker branding </a></li>
+                <li><a href="">Event Production</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-nav">
+              <ul>
+                <h3 class="less-opacity">Services</h3>
+                <li><a href="">Creative Design </a></li>
+                <li><a href="">Instant Printing </a></li>
+                <li><a href="">Signages wayfinding </a></li>
+                <li><a href="">Sticker branding </a></li>
+                <li><a href="">Event Production</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-col">
+            <div class="footer-nav contact">
+              <ul>
+                <h3>Our Office</h3>
+                <li>
+                  <a href="">
+                    <i class="fa fa-map-marker-alt"></i>
+                    <div>Jasha Solutions, PO Box : 31462 Building No.120, Street No.3087, Zone 91, Birkat Al Awamer, Qatar</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-phone"></i>
+                    <div>+974 4427 9696 / 5057 5222 / 5577 9972</div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-envelope"></i>
+                    <div>info@jashas.com</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="footer-bottom">
-            <p>© 2023 Jashas All rights reserved.</p>
-        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2023 Jashas All rights reserved.</p>
+      </div>
     </footer>
+  </body>
 
-</body>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"
+  ></script>
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"
+  ></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-
-<script src="assets/js/script.js"></script>
-<script src="assets/js/aos.js"></script>
-<SCript src="assets/js/wow.js"></SCript>
-<!-- Initialize Swiper -->
-<script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 5,
+      slidesPerView: 5,
 
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 0,
         },
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-                spaceBetween: 0,
-            },
-            640: {
-                slidesPerView: 2,
-
-            },
-            768: {
-                slidesPerView: 4,
-
-            },
-            1024: {
-                slidesPerView: 5,
-
-            },
-        }
+        640: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        1024: {
+          slidesPerView: 5,
+        },
+      },
     });
-</script>
-<script>
+  </script>
+  <script>
     var swiper = new Swiper(".mySwiperServices", {
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
-</script>
+  </script>
 
-
-<script>
+  <script>
     var swiper = new Swiper(".mySwiperBanner", {
-
-        autoplay: true,
-        loop: true,
-        speed: 800,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
+      autoplay: true,
+      loop: true,
+      speed: 800,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
-</script>
-<script>
+  </script>
+  <script>
     new WOW().init();
-</script>
-<script>
+  </script>
+  <script>
     AOS.init({
-
-        duration: 1200,
-    })
-</script>
-
-<script>
-    $('.dropdown').hover(function () {
-        $('.dropdown-toggle', this).trigger('click');
+      duration: 1200,
     });
-</script>
+  </script>
 
+  <script>
+    $(".dropdown").hover(function () {
+      $(".dropdown-toggle", this).trigger("click");
+    });
+  </script>
 </html>

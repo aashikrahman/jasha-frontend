@@ -1,41 +1,33 @@
 @import "_fonts.scss";
-@import"_media-queries.scss";
-
+@import "_media-queries.scss";
 
 @mixin flex-center {
-    display: flex !important;
-    align-items: center !important;
-
+  display: flex !important;
+  align-items: center !important;
 }
 
 @mixin BannerHead {
-    font-family: "jasha-Bold";
-    font-size: 44px;
-
+  font-family: "jasha-Bold";
+  font-size: 44px;
 }
 
 @mixin sctionHead {
-    font-family: "jasha-Bold";
-    font-size: 32px;
+  font-family: "jasha-Bold";
+  font-size: 32px;
 
-
-    @include tablet {
-        font-size: 22px;
-    }
+  @include tablet {
+    font-size: 22px;
+  }
 }
 
-
-
 @mixin BodyText {
-    font-family: "jasha-ultra-thin";
-    font-size: 16px;
-
+  font-family: "jasha-ultra-thin";
+  font-size: 16px;
 }
 
 @mixin whereBoxSection {
-    font-family: "jasha-medium";
-    font-size: 16px;
-
+  font-family: "jasha-medium";
+  font-size: 16px;
 }
 
 // @mixin BodyContainer {
@@ -43,11 +35,11 @@
 // }
 
 @mixin dualWrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4rem;
 }
 
 @mixin borderSingle {
-    border: 1px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
 }

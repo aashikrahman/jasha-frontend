@@ -1,58 +1,54 @@
 .our-stories {
-    .stories-banner-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
+  .stories-banner-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 
-        @include tablet {
-            grid-template-columns: 1fr;
-        }
-
-        .stories-head {
-            position: relative;
-            left: -1rem;
-
-            @include tablet {
-                left: 0;
-                padding: 1rem;
-                text-align: center;
-            }
-
-
-
-
-            h2 {
-                @include BannerHead;
-
-                @include tablet {
-                    font-size: 26px;
-                }
-
-                span {
-                    color: $primary ;
-                    @include BannerHead;
-
-                    @include tablet {
-                        font-size: 26px;
-                    }
-
-                }
-            }
-        }
+    @include tablet {
+      grid-template-columns: 1fr;
     }
 
-    .stories-details {
-        padding: 6rem 0;
+    .stories-head {
+      position: relative;
+      left: -1rem;
+
+      @include tablet {
+        left: 0;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      h2 {
+        @include BannerHead;
 
         @include tablet {
-            left: 0;
-            padding: 1rem;
+          font-size: 26px;
         }
 
-        p {
-            text-align: center;
-            margin-bottom: 1rem !important;
-            @include BodyText;
+        span {
+          color: $primary;
+          @include BannerHead;
+
+          @include tablet {
+            font-size: 26px;
+          }
         }
+      }
     }
+  }
+
+  .stories-details {
+    padding: 6rem 0;
+
+    @include tablet {
+      left: 0;
+      padding: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem !important;
+      @include BodyText;
+      text-align: left;
+    }
+  }
 }
